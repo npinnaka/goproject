@@ -1,0 +1,33 @@
+### POST request to /event
+POST {{host}}/event
+Content-Type: application/json,
+Authorization: Bearer {{token}}
+
+{
+  "name": "Title 1",
+  "description": "Description 1",
+  "location": "Location 1",
+  "date": "2021-01-01T00:00:00Z"
+}
+
+### GET request to /eventsr
+GET {{host}}/events
+
+
+### GET request to /events/:id
+GET {{host}}/events/2
+
+### PUT request to /events/:id
+PUT {{host}}/events/2
+Content-Type: application/json
+
+{
+  "name": "Title 1111",
+  "description": "Description 1111",
+  "location": "Location 1111",
+  "date": "2021-01-01T00:00:00Z"
+}
+
+### Delete request to /events/:id
+DELETE {{host}}/events/2
+
